@@ -1,0 +1,107 @@
+.content__layout2{
+    width: 100%;
+    background-color: rgba(255, 255, 255,0.7);
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__layout2p1{
+    flex: 1;
+    width: 90%;
+    align-self: center;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    margin: 0px;
+}
+
+.content__layout2p1Heading{
+    color: #333;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.content__layout2p2{
+    position: relative;
+    width: 90%;
+    align-self: center;
+    border: solid #333;
+    /* border-radius: 15px; */
+    margin: 2rem 0rem;
+    margin-top: 0;
+    flex:11;
+    overflow-y: auto;
+    max-height: 60rem;
+}
+
+.content__layout2p2Form{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.content__layout2p2Input{
+    width: 50%;
+    height: 3.5rem;
+    font-size: 1.6rem;
+    background-color: var(--mau-4);
+    border: none;
+    border-radius: 15px;
+    padding-left: 2rem;
+    margin: 1rem;
+}
+
+.content__layout2p2Btn{
+    position: absolute;
+    padding: 0.3rem 2rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    background-color: var(--mau-2);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    transition: background-color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+}
+
+.content__layout2p2Btn:hover{
+    background-color: var(--mau-1);
+    color: var(--mau-4);
+    cursor: pointer;
+}
+
+.content__layout2p3{
+    position: relative;
+    width: 90%;
+    align-self: center;
+    border: solid #333;
+    /* border-radius: 15px; */
+    margin: 2rem 0rem;
+    margin-top: 0;
+    flex:11;
+    overflow-y: auto;
+    max-height: 60rem;
+}
+
+.content__layout2p2::-webkit-scrollbar {
+    width: 0.7rem;
+    background-color: rgba(255, 255, 255,0);
+    margin: 10rem ;
+}
+
+.content__layout2p3::-webkit-scrollbar {
+    width: 0.7rem;
+    background-color: rgba(255, 255, 255,0);
+    margin: 10rem ;
+}
+
+  
+
+

@@ -1,0 +1,110 @@
+
+#content
+{
+    width: 100%;
+    min-height: 90vh;
+    margin: 0px;
+    padding: 20px;
+    min-height: 90%;
+    background-color: var(--mau-4);
+    padding-top:  6.5rem;
+}
+
+#content .name-page
+{
+    margin:0;
+    padding: 100px 0 0;
+    height: 200px;
+    font-size: 100px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #003b46;
+    text-align: center;
+}
+
+#content .name-page li a {
+    height: 46px
+}
+
+.content2
+{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+
+.cot-trai,.cot-phai
+{
+    width:40%;
+    background-color: #003b46;
+    font-size: 30px;
+    line-height: 200px;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.content2 a{
+    color: white;
+    font-weight:400;
+    text-decoration: none;
+    margin: auto;
+    justify-content: center;
+    line-height: 200px;
+    flex: 1;
+    text-align: center;
+}
+
+#content .content2 .cot-phai {
+    margin-left: 20px;
+}
+
+#content .content2 .cot-phai:hover, #content .content2 .cot-trai:hover{
+    width:40%;
+    background-color: rgba(0, 91, 96, 0.8);
+    font-size: 30px;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#content .content3
+{
+    width: 85%;
+    height: 200px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#content .content3:hover
+{
+    width: 85%;
+    height: 200px;
+    background-color: rgb(221, 220, 220);
+    margin-top: 20px;
+}
+
+#content .content3 a
+{
+    padding: 10% 0;
+    color: #003b46;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}

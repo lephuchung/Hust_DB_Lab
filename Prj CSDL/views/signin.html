@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Nhập</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="shortcut icon" type="image/png" href="./assets/img/logo.png"/>
+  <link rel="stylesheet" href="./assets/css/preset.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/signin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <ul class="header__navleft">
+      <li class="header__listItem"><a class="header__link" href="index.html"><img class="header__logo" src="./assets/img/Rent Car Taxi Cab Logo.png" alt="logo"></a></li>
+      <li class="header__listItem"><a class="header__link" href="index.html">Trang Chủ</a></li>
+      <li class="header__listItem"><a class="header__link" href="signin.html">Chăm Sóc Khách Hàng</a></li>
+    </ul>
+    <ul class="header__navright">
+      <li class="header__listItem"><a class="header__link" href="signin.html">Đăng Nhập</a></li>
+      <li class="header__listItem"><a class="header__link" href="signin.html">Hỗ Trợ</a></li>
+    </ul>
+  </div>
+
+  <div class="mainContent">
+    <div class="content__signIn">
+      <div class="content__logo">
+        <img class="content__logoImg" src="./assets/img/logo.png" alt="logo công ty">
+      </div>
+      <div class="content__login">
+        <form action="#" class="content__form" id="loginForm">
+          <div class="content__formHeader">
+            <p class="content__formHeaderP">Đăng Nhập</p>
+          </div>
+          <div class="content__formInput">
+            <input class="Content__formInputArea" type="text" placeholder="Tên đăng nhập" id="usernameInput">
+            <input class="Content__formInputArea" type="password" placeholder="Mật khẩu" id="passwordInput">
+            <input class="Content__formBtn" type="submit" value="Đăng Nhập">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <footer class="footer">
+      <div class="footer__p1">
+        <p class="footer--h1">Công ty cho thuê xe Takehiro</p>
+        <p class="footer--h2">Số 10 Giải Phóng, Hai Bà Trưng, Hà Nội</p>
+        <p class="footer--h2">GPKD số 0312345678 cấp bởi Sở Kế hoạch và Đầu tư Thành Phố Hà Nội ngày 07/06/2010</p>
+        <p class="footer--h2">Điện thoại: 1800 1008 - 0971234567</p>
+        <p class="footer--h2">Email liên hệ: Takehiro@busi.vn</p>
+      </div>
+      <div class="footer__p2">
+        <p class="footer--h1">Kết nối với Takehiro</p>
+        <p class="footer--h2">Facebook</p>
+        <p class="footer--h2">Twitter</p>
+        <p class="footer--h2">Youtube</p>
+        <p class="footer--h2">Tiktok</p>
+      </div>
+      <div class="footer__p3">
+        <img class="footer__p3logo" src="./assets/img/logobocongthuong.png" alt="đã thông báo với bộ công thương">
+        <img class="footer__p3logo" src="./assets/img/dmca-logo.png" alt="">
+      </div>
+    </footer>
+  </div>
+  <div class="footer2">
+    <footer class="footer">
+      <div class="footer__logo">
+        <img class="footer__logoImg" src="./assets/img/logo.png" alt="logo công ty">
+      </div>
+      <div class="footer__cpn">
+        <p class="footer__name">Takehiro Rent Car</p>
+      </div>
+      <div class="footer__slogan">Best Service, Right Time, Right People</div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Bắt sự kiện submit form
+    $('#loginForm').submit(function(event) {
+      event.preventDefault(); // Ngăn chặn sự kiện mặc định của form
+      const username = $('#usernameInput').val();
+      const password = $('#passwordInput').val();
+      // Gửi yêu cầu đăng nhập đến máy chủ
+      $.ajax({
+        url: '/login',
+        type: 'POST',
+        data: {
+          username: username,
+          password: password
+        },
+        success: function(response) {
+          // Xử lý phản hồi từ máy chủ sau khi đăng nhập thành công
+          // Ví dụ: Chuyển hướng đến trang chính
+          if (response.success) {
+            window.location.href = 'home.html';
+          } else {
+            alert(response.message);
+          }
+        },
+        error: function() {
+          // Xử lý khi xảy ra lỗi trong quá trình đăng nhập
+          alert('Đăng nhập không thành công. Vui lòng kiểm tra lại thông tin đăng nhập.');
+        }
+      });
+    });
+  });
+</script>
+
+  
+
+</body>
+
+</html>

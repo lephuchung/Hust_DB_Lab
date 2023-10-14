@@ -1,0 +1,123 @@
+.content{
+    background-color: var(--mau-4);
+    min-height: 90vh;
+    padding: 20px 5% 20px 5%;
+    box-sizing: content-box;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    /* height: 100vh; */
+    padding-top: 6.5rem;
+
+}
+
+.content__sidebar{
+    color: var(--mau-4);
+    border-radius: 50px;
+    align-self: stretch; 
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    flex: 25;
+    padding: 10px;
+    margin-right: 20px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--mau-1); 
+    box-sizing: border-box;
+    justify-content: flex-start;
+
+}
+.content__sidebarHeading{
+    align-self: flex-start;
+    margin-bottom: 0px;
+    /* flex: 1; */
+    margin-left: 10px;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.content__sidebarFunction{
+    color: var(--mau-4);
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.content__sidebarList{
+    list-style: none;
+    text-align: left;
+    font-size: 2rem;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex: 8;
+    flex-direction: column;
+}
+
+.content__sidebarItem{
+    line-height: 4rem;
+    width: 100%;
+}
+
+
+.content__sidebarSubList{
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.content__sidebarSubItem{
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    line-height: 4rem;
+    width: 100%;
+}
+
+#ct_sbback{
+    background-color: var(--mau-4);
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+
+.ct__sbbackLink{
+    color: var(--mau-4);
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.content__sidebarFunction:hover{
+    color: #fff;
+}
+
+.content__sidebarLink:hover{
+    color: #fff;
+}
+
+.ct__sbbackLink:hover{
+    color: #fff;
+}
+
+.content__sidebarLink{
+    color: var(--mau-4);
+    text-decoration: none;
+    line-height: 4rem;
+    /* border-top: solid 1px #fff; */
+    /* border-bottom: solid 1px #fff; */
+}
+
+
+.content__main{
+    background-color: #255360;
+    background-image: url(../img/logo.png);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    flex: 75;
+    min-height: 100vh;
+    display: flex;
+    border-radius: 50px;
+    border: solid 2px #333;
+    align-self: stretch; 
+}
+
+

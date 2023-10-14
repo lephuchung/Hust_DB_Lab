@@ -1,0 +1,93 @@
+.mainContent{
+    background-color: var(--mau-4);
+    min-height: 100vh;
+    border-radius: 6;
+    display: flex;
+}
+
+.content__signIn {
+    box-shadow: 0 0 10px #333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50px; */
+    margin: auto;
+    /* padding-top: 5rem; */
+}
+.content__logo{
+    display: flex;
+}
+.content__logoImg{
+    width: 400px;
+    height: 400px;
+    align-self: center;
+}
+
+.content__login {
+    align-self: stretch;
+    background-color: var(--mau-1);
+    color: var(--mau-4);
+    width: 40rem;
+
+}
+
+.content__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.content__formHeader{
+    font-size: 3.5rem;
+    width: 100%;
+    padding: 2rem;
+    justify-content: flex-start;
+    text-align: center;
+    flex: 1;
+    margin: auto;
+    border-bottom:solid ;
+}
+
+.content__formHeaderP{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.content__formInput{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.Content__formInputArea{
+    width: 30rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    padding-left: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--mau-4);
+    align-self: center;
+    flex:2;
+}
+
+.Content__formBtn{
+    padding: 0.2rem;
+    width: 10rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: none;
+    color: var(--mau-1);
+    background-color: var(--mau-3);
+    border-radius: 5px;
+    font-size: 1.6rem;
+    align-self: center;
+}
+
+.Content__formBtn:hover{
+    background-color: var(--mau-4);
+    color: var(--mau-2) 
+}
+
